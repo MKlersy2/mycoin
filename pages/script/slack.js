@@ -24,3 +24,7 @@ export async function publishMessage(id, text) {
       console.error(error);
     }
   }
+
+  export default function Slack() {
+      return (<></>)
+  }
