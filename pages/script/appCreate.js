@@ -1,6 +1,6 @@
 import React from "react";
 import $ from 'jquery'
-import { publishMessage } from "./slack";
+import { publishMessage } from "../api/slack";
 
 export default class Layout extends React.Component {
     componentDidMount() {

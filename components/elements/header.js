@@ -30,7 +30,7 @@ export default function Header(langGlobal) {
                         ))}
                     </div>
                 </div>
-                <div className={`${styles.wallet}`} walletconnect="true"><Image src={'/icon/metamask.png'} width={25} height={25}/>{langText.walletConnect}</div>
+                <div className={`${styles.wallet}`} walletconnect="true"><Image alt={'Logo metamask'} src={'/icon/metamask.png'} width={25} height={25}/>{langText.walletConnect}</div>
             </div>
             </div>
             <div className={header.media}>
