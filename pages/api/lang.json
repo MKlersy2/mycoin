@@ -54,7 +54,11 @@
                         "button1": "Create token",
                         "button2": "How it works",
                         "button3": "About",
-                        "button4": "Contact"
+                        "button4": "Contact",
+                        "titleLink": "/createToken/0",
+                        "button1Link": "/how-it-works",
+                        "button2Link": "/about",
+                        "button3Link": "/contact"
                     },
                     {
                         "title": "Legal",
@@ -72,6 +76,7 @@
                 "createToken": [
                     {
                         "title": "Create your token",
+                        "button": "Launch creation",
                         "blockchains": [
                             {
                                 "blockchain": "Solana",
@@ -382,7 +387,11 @@
                         "button1": "Créer mon token",
                         "button2": "Comment ça marche",
                         "button3": "À propos",
-                        "button4": "Contact"
+                        "button4": "Contact",
+                        "titleLink": "/createToken/0",
+                        "button1Link": "/how-it-works",
+                        "button2Link": "/about",
+                        "button3Link": "/contact"
                     },
                     {
                         "title": "Légal",
@@ -400,6 +409,7 @@
                 "createToken": [
                     {
                         "title": "Créer mon token",
+                        "button": "Lancer la création",
                         "blockchains": [
                             {
                                 "blockchain": "Solana",

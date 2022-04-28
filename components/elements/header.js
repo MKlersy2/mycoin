@@ -6,6 +6,7 @@ import Gitbook from '../icon/gitbook'
 import Arrow from '../icon/arrow'
 import { useRouter } from "next/router";
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header(langGlobal) {
     const { locale, locales, asPath } = useRouter();
@@ -29,7 +30,7 @@ export default function Header(langGlobal) {
                         ))}
                     </div>
                 </div>
-                <div className={`${styles.wallet} `}>{langText.walletConnect}</div>
+                <div className={`${styles.wallet}`} walletconnect="true"><Image src={'/icon/metamask.png'} width={25} height={25}/>{langText.walletConnect}</div>
             </div>
             </div>
             <div className={header.media}>

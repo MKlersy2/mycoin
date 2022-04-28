@@ -48,10 +48,23 @@
 .td {
     width: inherit;
 }
-
+.row > thead > tr, .row > thead > tr > th {
+    padding: 0;
+    margin: 0;
+    height: 0;
+}
 .row > tbody {
     width: 100%;
 }
 .row > tbody > tr > td:first-child {
     padding: 0 40px 0 0;
+}
+
+.active {
+    background: linear-gradient(180deg, #3e25df 0%, #270bb3 100%);
+    box-shadow: 7.02131e-16px 11.4667px 22.9333px rgb(8 1 51 / 51%), inset -2px 2px 5.55496px #19049a, inset 0px -3px 5.55496px #3608ff;
+}
+
+.button {
+    margin-top:30px;
 }

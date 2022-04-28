@@ -56,6 +56,50 @@ export default class Layout extends React.Component {
             }
           }
 
+          $('body').on('mouseup', '[walletconnect="true"]', () => metamask_connection());
+
+          async function metamask_connection() {
+            if(typeof ethereum === 'undefined') {
+              return false;
+            } else {
+              const accounts  = await ethereum.request({ method: 'eth_requestAccounts' });
+              const account = await accounts[0];
+              const result = await $('[walletConnect="true"]').html(account.slice(0, 4) + '...' + account.slice(-4));
+            }
+          }
+
+          if(typeof ethereum !== 'undefined') {
+            ethereum.on('accountsChanged', function (accounts) {
+              // Time to reload your interface with accounts[0]!
+              const account = accounts[0];
+              $('[walletConnect="true"]').html(account.slice(0, 4) + '...' + account.slice(-4));
+            });
+            ethereum.on('disconnect', function() {
+              $('[walletConnect="true"]').html('Reconnecter mon wallet');
+            });
+          }
+          if(typeof ethereum !== 'undefined') {
+            metamask_connection_auto();
+          } else {
+            console.log('metamask not installed')
+          }
+          window.onload = function() {
+            if(typeof ethereum !== 'undefined') {
+              metamask_connection_auto();
+            } else {
+              console.log('metamask not installed')
+            }
+          }
+          async function metamask_connection_auto() {
+            try {
+              const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+              const account = accounts[0];
+
+              $('[walletConnect="true"]').html(account.slice(0, 4) + '...' + account.slice(-4));
+            } catch (error) {
+              console.error(error);
+            }
+          }
     }
     componentWillUnmount() {
 

@@ -8,6 +8,8 @@ import langText from '../api/lang.json'
 import { useRouter } from "next/router";
 import create from '../../styles/create.module.css'
 import Link from 'next/link'
+import AppScript from '../script/appCreate.js'
+
 
 export default function Home({reference}) {
   const { locale } = useRouter();
@@ -38,8 +40,8 @@ export default function Home({reference}) {
                     </div>
                     <div className={create.blockchains}>
                         {lang.createToken[0].blockchains.map((elem, key) => (
-                            <Link passHref key={key} href={`./${key}`} locale={locale}>
-                              <div className={`${styles.button}`}>{elem.blockchain}</div>
+                            <Link passHref key={key} href={`/createToken/${key}`} locale={locale}>
+                              <div className={`${styles.button} ` + (key == reference ? (create.active) : '')}>{elem.blockchain}</div>
                             </Link>
                         ))}
                     </div>
@@ -64,11 +66,13 @@ export default function Home({reference}) {
                             ))}
                           </tbody>
                         </table>
+                        <div className={`${styles.button} ${create.button}`} id={'createToken'}>{lang.createToken[0].button}</div>
                     </div>
                 </div>
             </div>
             <Footer langText={lang}></Footer>
             <AppScroll/>
+            <AppScript/>
         </main>
     </div>
   )

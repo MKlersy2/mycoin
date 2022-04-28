@@ -26,6 +26,12 @@
   -o-transition: .3s;
 }
 
+.wallet {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .wallet:active, .button:active, .pressEffect:active {
   transform: scale(0.95);
   -webkit-transform: scale(0.95);

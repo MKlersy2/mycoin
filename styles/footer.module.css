@@ -19,6 +19,7 @@
 
 .button {
     margin: 30px 0;
+    cursor: pointer;
 }
 
 .subGlobal { 
@@ -32,4 +33,3 @@
 .subGlobalRight > .col > div {
     margin: 10px 0;
 }
-

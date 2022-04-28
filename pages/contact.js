@@ -7,7 +7,6 @@ import Header from '../components/elements/header'
 import langText from './api/lang.json'
 import { useRouter } from "next/router";
 import contact from '../styles/contact.module.css'
-import Link from 'next/link'
 import FondContact from '../components/img/FondContact'
 
 export default function Home() {
