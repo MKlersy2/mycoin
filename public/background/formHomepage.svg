@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1722px" height="395px" viewBox="0 0 1722 395" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#3608FF" offset="0%"></stop>
+            <stop stop-color="#180495" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,2.84217094e-14 C699.912752,5.22313516 1142.491,24.6363071 1327.73474,58.2395157 C1512.97848,91.8427244 1644.26773,138.096617 1721.60249,197.001195 C1644.26773,246.649857 1512.97848,289.849177 1327.73474,326.599154 C1142.491,363.349131 699.912752,386.149811 0,395.001195 L0,2.84217094e-14 Z" id="path-2"></path>
+        <linearGradient x1="50%" y1="47.369139%" x2="52.2762479%" y2="51.4288608%" id="linearGradient-4">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#07090B" stop-opacity="0.521907366" offset="44.577228%"></stop>
+            <stop stop-color="#1C262C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle" transform="translate(0.000000, -0.001195)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            <rect stroke="#979797" fill="url(#linearGradient-4)" mask="url(#mask-3)" x="0.5" y="0.501194702" width="1721" height="394"></rect>
+        </g>
+    </g>
+</svg>

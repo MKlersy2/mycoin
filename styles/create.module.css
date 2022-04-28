@@ -1,0 +1,57 @@
+.global {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blockchains {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blockchains > div {
+    min-width: 146px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form {
+    width: 100%;
+    margin: 100px 0 150px 0;
+    padding: 40px 40px;
+    background: linear-gradient(180deg, #0C1011 0%, #21292D 100%);
+    box-shadow: 5.69053e-15px 92.9333px 185.867px rgba(5, 6, 7, 0.8), inset -3.79368e-15px -61.9556px 61.9556px #0A0C0D, inset 3.79368e-15px 61.9556px 61.9556px #242C31;
+    border-radius: 32px;
+}
+
+.row {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.subRow {
+    margin: 5px 0;
+    width: 100%;
+}
+
+.subRow > td > label {
+    white-space:nowrap;
+}
+
+.input {
+    width: 100%;
+}
+
+.td {
+    width: inherit;
+}
+
+.row > tbody {
+    width: 100%;
+}
+.row > tbody > tr > td:first-child {
+    padding: 0 40px 0 0;
+}

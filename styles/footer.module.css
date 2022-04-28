@@ -1,0 +1,35 @@
+.global {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #161A1D 0%, #181E22 30.21%, #1A2227 69.79%, #1C262C 100%);
+}
+
+.subGlobalLeft {
+    display: flex;
+    gap: 70px;
+}
+
+.title {
+    color: var(--faux-blanc);
+    font-family: 'GilroySemiBold';
+    font-size: 16px;
+}
+
+.button {
+    margin: 30px 0;
+}
+
+.subGlobal { 
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0px;
+    justify-content: space-between;
+    max-width: var(--max-width);
+}
+
+.subGlobalRight > .col > div {
+    margin: 10px 0;
+}
+

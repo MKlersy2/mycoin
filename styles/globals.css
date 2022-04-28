@@ -1,9 +1,69 @@
+:root {
+  --bleu-roi: #2906FF;
+  --faux-blanc: #F0F0F0;
+  --faux-gris: #d2d1d1;
+  --faux-noir: #002238;
+  --bleu-gradient: linear-gradient(180deg, #1D05B6 0%, #3208FF 100%);
+  --bleu-shadow: 9.38896e-16px 15.3333px 30.6667px rgba(8, 1, 51, 0.4605), inset -4.23546e-16px -6.91704px 6.91704px #1A04A4, inset 4.23546e-16px 6.91704px 6.91704px #3508FF;
+  --max-width: 800px;
+}
+
+@font-face {
+  font-family: 'GilroyMedium';
+  font-style: medium;
+  src: url('../public/police/gilroy/Gilroy-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'GilroyBold';
+  font-style: bold;
+  src: url('../public/police/gilroy/Gilroy-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'GilroyRegular';
+  font-style: regular;
+  src: url('../public/police/gilroy/Gilroy-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'GilroyMediumItalic';
+  font-style: medium;
+  src: url('../public/police/gilroy/Gilroy-MediumItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'GilroyLightItalic';
+  font-style: light;
+  src: url('../public/police/gilroy/Gilroy-LightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'GilroyThin';
+  font-style: thin;
+  src: url('../public/police/gilroy/Gilroy-Thin.woff') format('woff');
+}
+@font-face {
+  font-family: 'GilroyLight';
+  font-style: light;
+  src: url('../public/police/gilroy/Gilroy-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'GilroyUltraLight';
+  font-style: ultralight;
+  src: url('../public/police/gilroy/Gilroy-UltraLight.woff') format('woff');
+}
+@font-face {
+  font-family: 'GilroySemiBold';
+  font-style: ultralight;
+  src: url('../public/police/gilroy/Gilroy-SemiBold.woff') format('woff');
+}
+
 html,
 body {
+  overflow-x: hidden;
+  width: 100vw;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'GilroyRegular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: white;
+    background: linear-gradient(180deg, #161A1D 0%, #181E22 30.21%, #1A2227 69.79%, #1C262C 100%);
 }
 
 a {
@@ -13,4 +73,20 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+body::-webkit-scrollbar {
+  background: linear-gradient(180deg, #161A1D 0%, #181E22 30.21%, #1A2227 69.79%, #1C262C 100%);
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 2px solid #1C262C;
+  background: rgb(96,96,96);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
