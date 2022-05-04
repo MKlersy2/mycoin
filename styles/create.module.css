@@ -61,10 +61,40 @@
 }
 
 .active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     background: linear-gradient(180deg, #3e25df 0%, #270bb3 100%);
     box-shadow: 7.02131e-16px 11.4667px 22.9333px rgb(8 1 51 / 51%), inset -2px 2px 5.55496px #19049a, inset 0px -3px 5.55496px #3608ff;
 }
 
+.active svg {
+    width: 20px;
+    height: 20px;
+}
+
 .button {
     margin-top:30px;
+}
+
+.formGlobal{}
+
+.settings {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unselectable {
+    opacity: .4;
+    user-select: none;
+    pointer-events: none;
+    cursor:not-allowed;
 }

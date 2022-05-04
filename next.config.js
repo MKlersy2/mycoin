@@ -1,28 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   i18n: {
     // providing the locales supported by your application
     locales: ["en", "fr"],
     //  default locale used when the non-locale paths are visited
     defaultLocale: "en"
   },
-  async headers() {
-    return [
-      {
-        source: "/",
-        headers: [
-          { key: "Access-Control-Allow-Credentials", value: "true" },
-          { key: "Access-Control-Allow-Origin", value: "https://slack.com" },
-          { key: "Access-Control-Allow-Methods", value: "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
-          { key:"Access-Control-Allow-Headers",  value: "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"},
-
-        ]
-      },
-    ]
+  env: {
+    EXTENSION: process.env.NODE_ENV === 'production' ? 'https' : 'http',
+    HOSTNAME: process.env.NODE_ENV === 'production' ? 'mycoin-liart.vercel.app' : 'localhost',
+    PORT: process.env.NODE_ENV === 'production' ? '' : '3001',
+    BACKEND: process.env.NODE_ENV === 'production' ? 'https://myserver.com/' : 'http://localhost:8888/',
+    SLACK_BOT_TOKEN: 'xoxb-3366149681558-3456956778162-vhbMmIqp2JHMPQwlNj8cSjgy',
   },
-
-  
 }
 
 module.exports = nextConfig

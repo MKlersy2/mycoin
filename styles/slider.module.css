@@ -1,0 +1,61 @@
+.global {
+    width: 53px;
+    height: 29px;
+    background: linear-gradient(180deg, #24282C 0%, #32383F 100%);
+    box-shadow: 4.49037e-16px 7.33333px 14.6667px rgba(9, 10, 11, 0.296), inset -1.55666e-16px -2.54222px 2.54222px #21252A, inset 1.55666e-16px 2.54222px 2.54222px #343A42;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+}
+
+.circle {
+    position: relative;
+    border-radius: 50%;
+    top: 3px;
+    left:4px;
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(180deg, #B0B0B0 0%, #FFFFFF 100%);
+    box-shadow: 1.79615e-16px 2.93333px 5.86667px rgba(51, 51, 51, 0.499), inset -8.54168e-17px -1.39496px 1.39496px #9D9D9D, inset 8.54168e-17px 1.39496px 1.39496px #FFFFFF;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.active {
+    left: calc(100% - 22px - 4px)  !important;
+}
+
+.parentActive {
+    background: var(--bleu-gradient);
+    box-shadow: var(--bleu-shadow);
+}
+
+.settings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    margin:20px 00;
+}
+
+.formActive {
+    display: block !important;
+}
+
+.form {
+    display: none;
+}
+
+.form input {
+    margin: 5px 0;
+}

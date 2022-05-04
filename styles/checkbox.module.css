@@ -1,0 +1,16 @@
+.global {
+    background: linear-gradient(180deg, #212529 0%, #333840 100%);
+    box-shadow: 2.93915e-16px 4.8px 9.6px rgba(9, 10, 11, 0.373), inset -1.1626e-16px -1.89867px 1.89867px #1E2226, inset 1.1626e-16px 1.89867px 1.89867px #353B43;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.global:checked {
+    background: #1D05B6 url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 3px 3px no-repeat;
+}

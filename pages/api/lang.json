@@ -2,7 +2,7 @@
     {
         "en": [
             {
-                "title": "Create your token fast\nand participate in the creation of the",
+                "title": "Create your token instantly\nand participate in the creation of the",
                 "titleImportant": "future",
                 "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                 "indexButton": "Home",
@@ -76,30 +76,73 @@
                 "createToken": [
                     {
                         "title": "Create your token",
+                        "settings": "advanced settings",
                         "button": "Launch creation",
+                        "advanced": [
+                            {
+                                "name": "Owner address of token",
+                                "id": "owner",
+                                "placeholder": "0x00000000...",
+                                "type": "input",
+                                "dataType": "text",
+                                "required": false
+                            }
+                        ],
                         "blockchains": [
                             {
                                 "blockchain": "Solana",
                                 "inputs": [
                                     {
                                         "name": "Token Name:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbol:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Decimals [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Mint authority:",
-                                        "placeholder": ""
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Freeze authority:",
-                                        "placeholder": ""
+                                        "name": "Can freeze",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -108,23 +151,55 @@
                                 "inputs": [
                                     {
                                         "name": "Token Name:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbol:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Decimals [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Mint authority:",
-                                        "placeholder": ""
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Freeze authority:",
-                                        "placeholder": ""
+                                        "name": "Can freeze",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -133,23 +208,55 @@
                                 "inputs": [
                                     {
                                         "name": "Token Name:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbol:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Decimals [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Mint authority:",
-                                        "placeholder": ""
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Freeze authority:",
-                                        "placeholder": ""
+                                        "name": "Can freeze",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -158,23 +265,55 @@
                                 "inputs": [
                                     {
                                         "name": "Token Name:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbol:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Decimals [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Mint authority:",
-                                        "placeholder": ""
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Freeze authority:",
-                                        "placeholder": ""
+                                        "name": "Can freeze",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -183,23 +322,55 @@
                                 "inputs": [
                                     {
                                         "name": "Token Name:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbol:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Decimals [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Mint authority:",
-                                        "placeholder": ""
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Freeze authority:",
-                                        "placeholder": ""
+                                        "name": "Can freeze",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -208,23 +379,55 @@
                                 "inputs": [
                                     {
                                         "name": "Token Name:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbol:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Decimals [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Mint authority:",
-                                        "placeholder": ""
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Freeze authority:",
-                                        "placeholder": ""
+                                        "name": "Can freeze",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -233,23 +436,55 @@
                                 "inputs": [
                                     {
                                         "name": "Token Name:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbol:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Decimals [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Mint authority:",
-                                        "placeholder": ""
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Freeze authority:",
-                                        "placeholder": ""
+                                        "name": "Can freeze",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -258,23 +493,55 @@
                                 "inputs": [
                                     {
                                         "name": "Token Name:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbol:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Decimals [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Mint authority:",
-                                        "placeholder": ""
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Freeze authority:",
-                                        "placeholder": ""
+                                        "name": "Can freeze",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -283,23 +550,55 @@
                                 "inputs": [
                                     {
                                         "name": "Token Name:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbol:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Decimals [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Mint authority:",
-                                        "placeholder": ""
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Freeze authority:",
-                                        "placeholder": ""
+                                        "name": "Can freeze",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -308,23 +607,55 @@
                                 "inputs": [
                                     {
                                         "name": "Token Name:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbol:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Decimals [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Mint authority:",
-                                        "placeholder": ""
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Freeze authority:",
-                                        "placeholder": ""
+                                        "name": "Can freeze",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             }
@@ -410,29 +741,72 @@
                     {
                         "title": "Créer mon token",
                         "button": "Lancer la création",
+                        "settings": "paramètres avancés",
+                        "advanced": [
+                            {
+                                "name": "Adresse du propriétaire du token",
+                                "id": "owner",
+                                "placeholder": "0x00000000...",
+                                "type": "input",
+                                "dataType": "text",
+                                "required": false
+                            }
+                        ],
                         "blockchains": [
                             {
                                 "blockchain": "Solana",
                                 "inputs": [
                                     {
                                         "name": "Nom du token:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbole:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Décimales [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Autorisation de minage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Autorisation de blockage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le gel",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -441,23 +815,55 @@
                                 "inputs": [
                                     {
                                         "name": "Nom du token:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbole:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Décimales [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Autorisation de minage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Autorisation de blockage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le gel",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -466,23 +872,55 @@
                                 "inputs": [
                                     {
                                         "name": "Nom du token:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbole:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Décimales [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Autorisation de minage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Autorisation de blockage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le gel",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -491,23 +929,55 @@
                                 "inputs": [
                                     {
                                         "name": "Nom du token:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbole:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Décimales [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Autorisation de minage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Autorisation de blockage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le gel",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -516,23 +986,55 @@
                                 "inputs": [
                                     {
                                         "name": "Nom du token:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbole:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Décimales [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Autorisation de minage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Autorisation de blockage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le gel",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -541,23 +1043,55 @@
                                 "inputs": [
                                     {
                                         "name": "Nom du token:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbole:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Décimales [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Autorisation de minage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Autorisation de blockage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le gel",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -566,23 +1100,55 @@
                                 "inputs": [
                                     {
                                         "name": "Nom du token:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbole:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Décimales [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Autorisation de minage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Autorisation de blockage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le gel",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -591,23 +1157,55 @@
                                 "inputs": [
                                     {
                                         "name": "Nom du token:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbole:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Décimales [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Autorisation de minage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Autorisation de blockage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le gel",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -616,23 +1214,55 @@
                                 "inputs": [
                                     {
                                         "name": "Nom du token:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbole:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Décimales [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Autorisation de minage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Autorisation de blockage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le gel",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             },
@@ -641,23 +1271,55 @@
                                 "inputs": [
                                     {
                                         "name": "Nom du token:",
-                                        "placeholder": "Bitcoin"
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Symbole:",
-                                        "placeholder": "BTC"
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
                                     },
                                     {
                                         "name": "Décimales [0-18]:",
-                                        "placeholder": "9"
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
                                     },
                                     {
-                                        "name": "Autorisation de minage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     },
                                     {
-                                        "name": "Autorisation de blockage:",
-                                        "placeholder": ""
+                                        "name": "Autoriser le gel",
+                                        "id": "freeze",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "required": false
                                     }
                                 ]
                             }
