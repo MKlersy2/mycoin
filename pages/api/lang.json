@@ -90,331 +90,6 @@
                         ],
                         "blockchains": [
                             {
-                                "blockchain": "Solana",
-                                "inputs": [
-                                    {
-                                        "name": "Token Name:",
-                                        "id": "name",
-                                        "placeholder": "Bitcoin",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Symbol:",
-                                        "id": "symbol",
-                                        "placeholder": "BTC",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Initial supply:",
-                                        "id": "supply",
-                                        "placeholder": "21000000",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Decimals [0-18]:",
-                                        "id": "decimals",
-                                        "placeholder": "9",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Can mint",
-                                        "id": "mint",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can freeze",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can pause",
-                                        "id": "pause",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Blacklist",
-                                        "id": "blacklist",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    }
-                                ]
-                            },
-                            {
-                                "blockchain": "Arbitrum",
-                                "inputs": [
-                                    {
-                                        "name": "Token Name:",
-                                        "id": "name",
-                                        "placeholder": "Bitcoin",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Symbol:",
-                                        "id": "symbol",
-                                        "placeholder": "BTC",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Initial supply:",
-                                        "id": "supply",
-                                        "placeholder": "21000000",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Decimals [0-18]:",
-                                        "id": "decimals",
-                                        "placeholder": "9",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Can mint",
-                                        "id": "mint",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can freeze",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can pause",
-                                        "id": "pause",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Blacklist",
-                                        "id": "blacklist",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    }
-                                ]
-                            },
-                            {
-                                "blockchain": "Heco",
-                                "inputs": [
-                                    {
-                                        "name": "Token Name:",
-                                        "id": "name",
-                                        "placeholder": "Bitcoin",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Symbol:",
-                                        "id": "symbol",
-                                        "placeholder": "BTC",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Initial supply:",
-                                        "id": "supply",
-                                        "placeholder": "21000000",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Decimals [0-18]:",
-                                        "id": "decimals",
-                                        "placeholder": "9",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Can mint",
-                                        "id": "mint",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can freeze",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can pause",
-                                        "id": "pause",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Blacklist",
-                                        "id": "blacklist",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    }
-                                ]
-                            },
-                            {
-                                "blockchain": "Polygon",
-                                "inputs": [
-                                    {
-                                        "name": "Token Name:",
-                                        "id": "name",
-                                        "placeholder": "Bitcoin",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Symbol:",
-                                        "id": "symbol",
-                                        "placeholder": "BTC",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Initial supply:",
-                                        "id": "supply",
-                                        "placeholder": "21000000",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Decimals [0-18]:",
-                                        "id": "decimals",
-                                        "placeholder": "9",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Can mint",
-                                        "id": "mint",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can freeze",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can pause",
-                                        "id": "pause",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Blacklist",
-                                        "id": "blacklist",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    }
-                                ]
-                            },
-                            {
-                                "blockchain": "xDAI",
-                                "inputs": [
-                                    {
-                                        "name": "Token Name:",
-                                        "id": "name",
-                                        "placeholder": "Bitcoin",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Symbol:",
-                                        "id": "symbol",
-                                        "placeholder": "BTC",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Initial supply:",
-                                        "id": "supply",
-                                        "placeholder": "21000000",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Decimals [0-18]:",
-                                        "id": "decimals",
-                                        "placeholder": "9",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Can mint",
-                                        "id": "mint",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can freeze",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can pause",
-                                        "id": "pause",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Blacklist",
-                                        "id": "blacklist",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    }
-                                ]
-                            },
-                            {
                                 "blockchain": "ETH",
                                 "inputs": [
                                     {
@@ -450,17 +125,19 @@
                                         "required": true
                                     },
                                     {
+                                        "name": "Can burn",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility ro reduce the total supply",
+                                        "required": false
+                                    },
+                                    {
                                         "name": "Can mint",
                                         "id": "mint",
                                         "placeholder": "",
                                         "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can freeze",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
+                                        "detail": "Give the possibility to increase the total supply",
                                         "required": false
                                     },
                                     {
@@ -468,6 +145,7 @@
                                         "id": "pause",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "This means your token and all associated operations like exchanges etc... Can be stopped and resumed whenever you want. Usefull when you get attacked for example, contact us for more details.",
                                         "required": false
                                     },
                                     {
@@ -475,6 +153,7 @@
                                         "id": "blacklist",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Specific address can be blacklisted if needed. For example, when user stole tokens. But this option, can be frowned upon.",
                                         "required": false
                                     }
                                 ]
@@ -515,17 +194,19 @@
                                         "required": true
                                     },
                                     {
+                                        "name": "Can burn",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility ro reduce the total supply",
+                                        "required": false
+                                    },
+                                    {
                                         "name": "Can mint",
                                         "id": "mint",
                                         "placeholder": "",
                                         "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can freeze",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
+                                        "detail": "Give the possibility to increase the total supply",
                                         "required": false
                                     },
                                     {
@@ -533,6 +214,7 @@
                                         "id": "pause",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "This means your token and all associated operations like exchanges etc... Can be stopped and resumed whenever you want. Usefull when you get attacked for example, contact us for more details.",
                                         "required": false
                                     },
                                     {
@@ -540,12 +222,13 @@
                                         "id": "blacklist",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Specific address can be blacklisted if needed. For example, when user stole tokens. But this option, can be frowned upon.",
                                         "required": false
                                     }
                                 ]
                             },
                             {
-                                "blockchain": "Phantom",
+                                "blockchain": "Solana",
                                 "inputs": [
                                     {
                                         "name": "Token Name:",
@@ -580,17 +263,19 @@
                                         "required": true
                                     },
                                     {
+                                        "name": "Can burn",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility ro reduce the total supply",
+                                        "required": false
+                                    },
+                                    {
                                         "name": "Can mint",
                                         "id": "mint",
                                         "placeholder": "",
                                         "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can freeze",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
+                                        "detail": "Give the possibility to increase the total supply",
                                         "required": false
                                     },
                                     {
@@ -598,6 +283,7 @@
                                         "id": "pause",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "This means your token and all associated operations like exchanges etc... Can be stopped and resumed whenever you want. Usefull when you get attacked for example, contact us for more details.",
                                         "required": false
                                     },
                                     {
@@ -605,6 +291,352 @@
                                         "id": "blacklist",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Specific address can be blacklisted if needed. For example, when user stole tokens. But this option, can be frowned upon.",
+                                        "required": false
+                                    }
+                                ]
+                            },
+                            {
+                                "blockchain": "Polygon",
+                                "inputs": [
+                                    {
+                                        "name": "Token Name:",
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Symbol:",
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Initial supply:",
+                                        "id": "supply",
+                                        "placeholder": "21000000",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Decimals [0-18]:",
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Can burn",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility ro reduce the total supply",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility to increase the total supply",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "This means your token and all associated operations like exchanges etc... Can be stopped and resumed whenever you want. Usefull when you get attacked for example, contact us for more details.",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Specific address can be blacklisted if needed. For example, when user stole tokens. But this option, can be frowned upon.",
+                                        "required": false
+                                    }
+                                ]
+                            },
+                            {
+                                "blockchain": "xDAI",
+                                "inputs": [
+                                    {
+                                        "name": "Token Name:",
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Symbol:",
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Initial supply:",
+                                        "id": "supply",
+                                        "placeholder": "21000000",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Decimals [0-18]:",
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Can burn",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility ro reduce the total supply",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility to increase the total supply",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "This means your token and all associated operations like exchanges etc... Can be stopped and resumed whenever you want. Usefull when you get attacked for example, contact us for more details.",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Specific address can be blacklisted if needed. For example, when user stole tokens. But this option, can be frowned upon.",
+                                        "required": false
+                                    }
+                                ]
+                            },
+                            {
+                                "blockchain": "Cronos",
+                                "inputs": [
+                                    {
+                                        "name": "Token Name:",
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Symbol:",
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Initial supply:",
+                                        "id": "supply",
+                                        "placeholder": "21000000",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Decimals [0-18]:",
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Can burn",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility ro reduce the total supply",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility to increase the total supply",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "This means your token and all associated operations like exchanges etc... Can be stopped and resumed whenever you want. Usefull when you get attacked for example, contact us for more details.",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Specific address can be blacklisted if needed. For example, when user stole tokens. But this option, can be frowned upon.",
+                                        "required": false
+                                    }
+                                ]
+                            },
+                            {
+                                "blockchain": "Polkadot",
+                                "inputs": [
+                                    {
+                                        "name": "Token Name:",
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Symbol:",
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Initial supply:",
+                                        "id": "supply",
+                                        "placeholder": "21000000",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Decimals [0-18]:",
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Can burn",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility ro reduce the total supply",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility to increase the total supply",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "This means your token and all associated operations like exchanges etc... Can be stopped and resumed whenever you want. Usefull when you get attacked for example, contact us for more details.",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Specific address can be blacklisted if needed. For example, when user stole tokens. But this option, can be frowned upon.",
+                                        "required": false
+                                    }
+                                ]
+                            },
+                            {
+                                "blockchain": "Fantom",
+                                "inputs": [
+                                    {
+                                        "name": "Token Name:",
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Symbol:",
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Initial supply:",
+                                        "id": "supply",
+                                        "placeholder": "21000000",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Decimals [0-18]:",
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Can burn",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility ro reduce the total supply",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can mint",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility to increase the total supply",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Can pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "This means your token and all associated operations like exchanges etc... Can be stopped and resumed whenever you want. Usefull when you get attacked for example, contact us for more details.",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Specific address can be blacklisted if needed. For example, when user stole tokens. But this option, can be frowned upon.",
                                         "required": false
                                     }
                                 ]
@@ -645,17 +677,19 @@
                                         "required": true
                                     },
                                     {
+                                        "name": "Can burn",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility ro reduce the total supply",
+                                        "required": false
+                                    },
+                                    {
                                         "name": "Can mint",
                                         "id": "mint",
                                         "placeholder": "",
                                         "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can freeze",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
+                                        "detail": "Give the possibility to increase the total supply",
                                         "required": false
                                     },
                                     {
@@ -663,6 +697,7 @@
                                         "id": "pause",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "This means your token and all associated operations like exchanges etc... Can be stopped and resumed whenever you want. Usefull when you get attacked for example, contact us for more details.",
                                         "required": false
                                     },
                                     {
@@ -670,6 +705,7 @@
                                         "id": "blacklist",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Specific address can be blacklisted if needed. For example, when user stole tokens. But this option, can be frowned upon.",
                                         "required": false
                                     }
                                 ]
@@ -710,17 +746,19 @@
                                         "required": true
                                     },
                                     {
+                                        "name": "Can burn",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Give the possibility ro reduce the total supply",
+                                        "required": false
+                                    },
+                                    {
                                         "name": "Can mint",
                                         "id": "mint",
                                         "placeholder": "",
                                         "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Can freeze",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
+                                        "detail": "Give the possibility to increase the total supply",
                                         "required": false
                                     },
                                     {
@@ -728,6 +766,7 @@
                                         "id": "pause",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "This means your token and all associated operations like exchanges etc... Can be stopped and resumed whenever you want. Usefull when you get attacked for example, contact us for more details.",
                                         "required": false
                                     },
                                     {
@@ -735,6 +774,7 @@
                                         "id": "blacklist",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Specific address can be blacklisted if needed. For example, when user stole tokens. But this option, can be frowned upon.",
                                         "required": false
                                     }
                                 ]
@@ -834,331 +874,6 @@
                         ],
                         "blockchains": [
                             {
-                                "blockchain": "Solana",
-                                "inputs": [
-                                    {
-                                        "name": "Nom du token:",
-                                        "id": "name",
-                                        "placeholder": "Bitcoin",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Symbole:",
-                                        "id": "symbol",
-                                        "placeholder": "BTC",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Émission initiale:",
-                                        "id": "supply",
-                                        "placeholder": "21000000",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Décimales [0-18]:",
-                                        "id": "decimals",
-                                        "placeholder": "9",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Autoriser le minage",
-                                        "id": "mint",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser le gel",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser la pause",
-                                        "id": "pause",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Blacklist",
-                                        "id": "blacklist",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    }
-                                ]
-                            },
-                            {
-                                "blockchain": "Arbitrum",
-                                "inputs": [
-                                    {
-                                        "name": "Nom du token:",
-                                        "id": "name",
-                                        "placeholder": "Bitcoin",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Symbole:",
-                                        "id": "symbol",
-                                        "placeholder": "BTC",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Émission initiale:",
-                                        "id": "supply",
-                                        "placeholder": "21000000",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Décimales [0-18]:",
-                                        "id": "decimals",
-                                        "placeholder": "9",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Autoriser le minage",
-                                        "id": "mint",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser le gel",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser la pause",
-                                        "id": "pause",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Blacklist",
-                                        "id": "blacklist",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    }
-                                ]
-                            },
-                            {
-                                "blockchain": "Heco",
-                                "inputs": [
-                                    {
-                                        "name": "Nom du token:",
-                                        "id": "name",
-                                        "placeholder": "Bitcoin",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Symbole:",
-                                        "id": "symbol",
-                                        "placeholder": "BTC",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Émission initiale:",
-                                        "id": "supply",
-                                        "placeholder": "21000000",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Décimales [0-18]:",
-                                        "id": "decimals",
-                                        "placeholder": "9",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Autoriser le minage",
-                                        "id": "mint",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser le gel",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser la pause",
-                                        "id": "pause",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Blacklist",
-                                        "id": "blacklist",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    }
-                                ]
-                            },
-                            {
-                                "blockchain": "Polygon",
-                                "inputs": [
-                                    {
-                                        "name": "Nom du token:",
-                                        "id": "name",
-                                        "placeholder": "Bitcoin",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Symbole:",
-                                        "id": "symbol",
-                                        "placeholder": "BTC",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Émission initiale:",
-                                        "id": "supply",
-                                        "placeholder": "21000000",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Décimales [0-18]:",
-                                        "id": "decimals",
-                                        "placeholder": "9",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Autoriser le minage",
-                                        "id": "mint",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser le gel",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser la pause",
-                                        "id": "pause",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Blacklist",
-                                        "id": "blacklist",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    }
-                                ]
-                            },
-                            {
-                                "blockchain": "xDAI",
-                                "inputs": [
-                                    {
-                                        "name": "Nom du token:",
-                                        "id": "name",
-                                        "placeholder": "Bitcoin",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Symbole:",
-                                        "id": "symbol",
-                                        "placeholder": "BTC",
-                                        "type": "input",
-                                        "dataType": "text",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Émission initiale:",
-                                        "id": "supply",
-                                        "placeholder": "21000000",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Décimales [0-18]:",
-                                        "id": "decimals",
-                                        "placeholder": "9",
-                                        "type": "input",
-                                        "dataType": "number",
-                                        "required": true
-                                    },
-                                    {
-                                        "name": "Autoriser le minage",
-                                        "id": "mint",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser le gel",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser la pause",
-                                        "id": "pause",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Blacklist",
-                                        "id": "blacklist",
-                                        "placeholder": "",
-                                        "type": "checkbox",
-                                        "required": false
-                                    }
-                                ]
-                            },
-                            {
                                 "blockchain": "ETH",
                                 "inputs": [
                                     {
@@ -1194,17 +909,19 @@
                                         "required": true
                                     },
                                     {
+                                        "name": "Autoriser de brûler",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité de réduire l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
                                         "name": "Autoriser le minage",
                                         "id": "mint",
                                         "placeholder": "",
                                         "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser le gel",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité d'augmenter l'émission initiale",
                                         "required": false
                                     },
                                     {
@@ -1212,6 +929,7 @@
                                         "id": "pause",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Cela signifie que votre jeton et toutes les opérations associées comme les échanges etc... peuvent être arrêtés et repris quand vous le souhaitez. Utile lorsque vous êtes attaqué par exemple, contactez-nous pour plus de détails.",
                                         "required": false
                                     },
                                     {
@@ -1219,6 +937,7 @@
                                         "id": "blacklist",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Une adresse spécifique peut être mise sur liste noire si nécessaire. Par exemple, lorsque l'utilisateur a volé des jetons. Mais cette option peut être mal vu.",
                                         "required": false
                                     }
                                 ]
@@ -1259,17 +978,19 @@
                                         "required": true
                                     },
                                     {
+                                        "name": "Autoriser de brûler",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité de réduire l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
                                         "name": "Autoriser le minage",
                                         "id": "mint",
                                         "placeholder": "",
                                         "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser le gel",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité d'augmenter l'émission initiale",
                                         "required": false
                                     },
                                     {
@@ -1277,6 +998,7 @@
                                         "id": "pause",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Cela signifie que votre jeton et toutes les opérations associées comme les échanges etc... peuvent être arrêtés et repris quand vous le souhaitez. Utile lorsque vous êtes attaqué par exemple, contactez-nous pour plus de détails.",
                                         "required": false
                                     },
                                     {
@@ -1284,12 +1006,13 @@
                                         "id": "blacklist",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Une adresse spécifique peut être mise sur liste noire si nécessaire. Par exemple, lorsque l'utilisateur a volé des jetons. Mais cette option peut être mal vu.",
                                         "required": false
                                     }
                                 ]
                             },
                             {
-                                "blockchain": "Phantom",
+                                "blockchain": "Solana",
                                 "inputs": [
                                     {
                                         "name": "Nom du token:",
@@ -1324,17 +1047,19 @@
                                         "required": true
                                     },
                                     {
+                                        "name": "Autoriser de brûler",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité de réduire l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
                                         "name": "Autoriser le minage",
                                         "id": "mint",
                                         "placeholder": "",
                                         "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser le gel",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité d'augmenter l'émission initiale",
                                         "required": false
                                     },
                                     {
@@ -1342,6 +1067,7 @@
                                         "id": "pause",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Cela signifie que votre jeton et toutes les opérations associées comme les échanges etc... peuvent être arrêtés et repris quand vous le souhaitez. Utile lorsque vous êtes attaqué par exemple, contactez-nous pour plus de détails.",
                                         "required": false
                                     },
                                     {
@@ -1349,6 +1075,352 @@
                                         "id": "blacklist",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Une adresse spécifique peut être mise sur liste noire si nécessaire. Par exemple, lorsque l'utilisateur a volé des jetons. Mais cette option peut être mal vu.",
+                                        "required": false
+                                    }
+                                ]
+                            },
+                            {
+                                "blockchain": "Polygon",
+                                "inputs": [
+                                    {
+                                        "name": "Nom du token:",
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Symbole:",
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Émission initiale:",
+                                        "id": "supply",
+                                        "placeholder": "21000000",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Décimales [0-18]:",
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Autoriser de brûler",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité de réduire l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité d'augmenter l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Cela signifie que votre jeton et toutes les opérations associées comme les échanges etc... peuvent être arrêtés et repris quand vous le souhaitez. Utile lorsque vous êtes attaqué par exemple, contactez-nous pour plus de détails.",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Une adresse spécifique peut être mise sur liste noire si nécessaire. Par exemple, lorsque l'utilisateur a volé des jetons. Mais cette option peut être mal vu.",
+                                        "required": false
+                                    }
+                                ]
+                            },
+                            {
+                                "blockchain": "xDAI",
+                                "inputs": [
+                                    {
+                                        "name": "Nom du token:",
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Symbole:",
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Émission initiale:",
+                                        "id": "supply",
+                                        "placeholder": "21000000",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Décimales [0-18]:",
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Autoriser de brûler",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité de réduire l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité d'augmenter l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Cela signifie que votre jeton et toutes les opérations associées comme les échanges etc... peuvent être arrêtés et repris quand vous le souhaitez. Utile lorsque vous êtes attaqué par exemple, contactez-nous pour plus de détails.",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Une adresse spécifique peut être mise sur liste noire si nécessaire. Par exemple, lorsque l'utilisateur a volé des jetons. Mais cette option peut être mal vu.",
+                                        "required": false
+                                    }
+                                ]
+                            },
+                            {
+                                "blockchain": "Cronos",
+                                "inputs": [
+                                    {
+                                        "name": "Nom du token:",
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Symbole:",
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Émission initiale:",
+                                        "id": "supply",
+                                        "placeholder": "21000000",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Décimales [0-18]:",
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Autoriser de brûler",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité de réduire l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité d'augmenter l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Cela signifie que votre jeton et toutes les opérations associées comme les échanges etc... peuvent être arrêtés et repris quand vous le souhaitez. Utile lorsque vous êtes attaqué par exemple, contactez-nous pour plus de détails.",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Une adresse spécifique peut être mise sur liste noire si nécessaire. Par exemple, lorsque l'utilisateur a volé des jetons. Mais cette option peut être mal vu.",
+                                        "required": false
+                                    }
+                                ]
+                            },
+                            {
+                                "blockchain": "Polkadot",
+                                "inputs": [
+                                    {
+                                        "name": "Nom du token:",
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Symbole:",
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Émission initiale:",
+                                        "id": "supply",
+                                        "placeholder": "21000000",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Décimales [0-18]:",
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Autoriser de brûler",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité de réduire l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité d'augmenter l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Cela signifie que votre jeton et toutes les opérations associées comme les échanges etc... peuvent être arrêtés et repris quand vous le souhaitez. Utile lorsque vous êtes attaqué par exemple, contactez-nous pour plus de détails.",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Une adresse spécifique peut être mise sur liste noire si nécessaire. Par exemple, lorsque l'utilisateur a volé des jetons. Mais cette option peut être mal vu.",
+                                        "required": false
+                                    }
+                                ]
+                            },
+                            {
+                                "blockchain": "Fantom",
+                                "inputs": [
+                                    {
+                                        "name": "Nom du token:",
+                                        "id": "name",
+                                        "placeholder": "Bitcoin",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Symbole:",
+                                        "id": "symbol",
+                                        "placeholder": "BTC",
+                                        "type": "input",
+                                        "dataType": "text",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Émission initiale:",
+                                        "id": "supply",
+                                        "placeholder": "21000000",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Décimales [0-18]:",
+                                        "id": "decimals",
+                                        "placeholder": "9",
+                                        "type": "input",
+                                        "dataType": "number",
+                                        "required": true
+                                    },
+                                    {
+                                        "name": "Autoriser de brûler",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité de réduire l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser le minage",
+                                        "id": "mint",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité d'augmenter l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Autoriser la pause",
+                                        "id": "pause",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Cela signifie que votre jeton et toutes les opérations associées comme les échanges etc... peuvent être arrêtés et repris quand vous le souhaitez. Utile lorsque vous êtes attaqué par exemple, contactez-nous pour plus de détails.",
+                                        "required": false
+                                    },
+                                    {
+                                        "name": "Blacklist",
+                                        "id": "blacklist",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Une adresse spécifique peut être mise sur liste noire si nécessaire. Par exemple, lorsque l'utilisateur a volé des jetons. Mais cette option peut être mal vu.",
                                         "required": false
                                     }
                                 ]
@@ -1389,17 +1461,19 @@
                                         "required": true
                                     },
                                     {
+                                        "name": "Autoriser de brûler",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité de réduire l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
                                         "name": "Autoriser le minage",
                                         "id": "mint",
                                         "placeholder": "",
                                         "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser le gel",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité d'augmenter l'émission initiale",
                                         "required": false
                                     },
                                     {
@@ -1407,6 +1481,7 @@
                                         "id": "pause",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Cela signifie que votre jeton et toutes les opérations associées comme les échanges etc... peuvent être arrêtés et repris quand vous le souhaitez. Utile lorsque vous êtes attaqué par exemple, contactez-nous pour plus de détails.",
                                         "required": false
                                     },
                                     {
@@ -1414,6 +1489,7 @@
                                         "id": "blacklist",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Une adresse spécifique peut être mise sur liste noire si nécessaire. Par exemple, lorsque l'utilisateur a volé des jetons. Mais cette option peut être mal vu.",
                                         "required": false
                                     }
                                 ]
@@ -1454,17 +1530,19 @@
                                         "required": true
                                     },
                                     {
+                                        "name": "Autoriser de brûler",
+                                        "id": "burn",
+                                        "placeholder": "",
+                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité de réduire l'émission initiale",
+                                        "required": false
+                                    },
+                                    {
                                         "name": "Autoriser le minage",
                                         "id": "mint",
                                         "placeholder": "",
                                         "type": "checkbox",
-                                        "required": false
-                                    },
-                                    {
-                                        "name": "Autoriser le gel",
-                                        "id": "freeze",
-                                        "placeholder": "",
-                                        "type": "checkbox",
+                                        "detail": "Donner la possibilité d'augmenter l'émission initiale",
                                         "required": false
                                     },
                                     {
@@ -1472,6 +1550,7 @@
                                         "id": "pause",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Cela signifie que votre jeton et toutes les opérations associées comme les échanges etc... peuvent être arrêtés et repris quand vous le souhaitez. Utile lorsque vous êtes attaqué par exemple, contactez-nous pour plus de détails.",
                                         "required": false
                                     },
                                     {
@@ -1479,6 +1558,7 @@
                                         "id": "blacklist",
                                         "placeholder": "",
                                         "type": "checkbox",
+                                        "detail": "Une adresse spécifique peut être mise sur liste noire si nécessaire. Par exemple, lorsque l'utilisateur a volé des jetons. Mais cette option peut être mal vu.",
                                         "required": false
                                     }
                                 ]

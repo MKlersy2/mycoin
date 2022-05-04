@@ -39,6 +39,7 @@
 
 .subRow > td > label {
     white-space:nowrap;
+    cursor: pointer;
 }
 
 .input {
@@ -92,9 +93,43 @@
     justify-content: center;
 }
 
+.checkbox label {
+    cursor: pointer;
+}
+
 .unselectable {
     opacity: .4;
     user-select: none;
     pointer-events: none;
     cursor:not-allowed;
+}
+
+.labelCheck {
+    position: relative;
+}
+
+.subLabel {
+    display: none;
+    position: absolute;
+    top:calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    padding:8px;
+    width: 250px;
+    background: linear-gradient(180deg, #24282C 0%, #32383F 100%);
+    box-shadow: 4.49037e-16px 7.33333px 14.6667px rgb(9 10 11 / 30%), inset -1.55666e-16px -2.54222px 2.54222px #21252a, inset 1.55666e-16px 2.54222px 2.54222px #343a42;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.labelCheck:hover > .subLabel {
+    display: block !important;
 }

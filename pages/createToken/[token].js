@@ -75,7 +75,10 @@ export default function Home({reference}) {
                       <div className={create.settings}>
                       {lang.createToken[0].blockchains[reference].inputs.filter(input => input.type == 'checkbox').map((input, key) => (
                         <div key={key} className={create.checkbox}>
-                          <label htmlFor={input.id}>{input.name}</label>
+                          <div className={create.labelCheck}>
+                            <label htmlFor={input.id}>{input.name}</label>
+                            <div className={create.subLabel}>{input.detail}</div>
+                          </div>
                           <Checkbox attr={input}/>
                         </div>
                       ))}
