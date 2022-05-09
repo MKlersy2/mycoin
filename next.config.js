@@ -12,7 +12,7 @@ const nextConfig = {
     HOSTNAME: process.env.NODE_ENV === 'production' ? 'mycoin-liart.vercel.app' : 'localhost',
     PORT: process.env.NODE_ENV === 'production' ? '' : '3001',
     BACKEND: process.env.NODE_ENV === 'production' ? 'https://myserver.com/' : 'http://localhost:8888/',
-    SLACK_BOT_TOKEN: 'xoxb-3366149681558-3456956778162-vhbMmIqp2JHMPQwlNj8cSjgy',
+    SLACK_BOT_TOKEN: 'xoxb-3366149681558-3456956778162-hNYojMFlj1t3F8lyYtzuYvy3',
   },
 }
 

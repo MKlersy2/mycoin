@@ -8,6 +8,7 @@ import langText from './api/lang.json'
 import { useRouter } from "next/router";
 import contact from '../styles/contact.module.css'
 import FondContact from '../components/img/FondContact'
+import AppContact from './script/appContact.js'
 
 export default function Home() {
   const { locale } = useRouter();
@@ -36,13 +37,15 @@ export default function Home() {
                     <div className={`${styles.title} ${contact.title}`}>
                         <h1>{lang.contact[0].title}</h1>
                     </div>
-                    <div className={contact.form}>
-                        <input placeholder={lang.contact[0].inputName} className={styles.input}/>
-                        <input placeholder={lang.contact[0].inputEmail} className={styles.input}/>
-                        <input placeholder={lang.contact[0].inputSubject} className={styles.input}/>
-                        <textarea className={`${styles.input} ${contact.textArea}`} placeholder={lang.contact[0].inputComment}></textarea>
-                        <div className={`${styles.button} ${contact.button}`}>{lang.contact[0].button}</div>
-                    </div>
+                    <form className={contact.formGlobal}>
+                      <div className={contact.form}>
+                        <input id="name" name="name" type="name" placeholder={lang.contact[0].inputName} className={styles.input} required/>
+                        <input id="email" name="email" type="email" placeholder={lang.contact[0].inputEmail} className={styles.input} required/>
+                        <input id="object" name="object" type="text" placeholder={lang.contact[0].inputSubject} className={styles.input}/>
+                        <textarea id="texte" name="texte" className={`${styles.input} ${contact.textArea}`} placeholder={lang.contact[0].inputComment} required></textarea>
+                        <div id='sendMessage' className={`${styles.button} ${contact.button} ${contact.unselectable}`}>{lang.contact[0].button}</div>
+                      </div>
+                    </form>
                 </div>
                 <div className={contact.fond}>
                     <FondContact/>
@@ -53,6 +56,7 @@ export default function Home() {
             </div>
             <Footer langText={lang}></Footer>
             <AppScroll/>
+            <AppContact/>
         </main>
     </div>
   )

@@ -55,3 +55,12 @@
     right: 100px;
     top: -60%;
 }
+
+.unselectable {
+    opacity: .4;
+    user-select: none;
+    pointer-events: none;
+    cursor:not-allowed;
+}
+
+.formGlobal {}
