@@ -133,3 +133,16 @@
 .labelCheck:hover > .subLabel {
     display: block !important;
 }
+
+@media (max-width: 800px) {
+    .global {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 505px) {
+    .settings {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

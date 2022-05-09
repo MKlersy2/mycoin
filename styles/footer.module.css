@@ -15,6 +15,8 @@
     color: var(--faux-blanc);
     font-family: 'GilroySemiBold';
     font-size: 16px;
+    border-bottom: 4px solid #2906FF;
+    width: min-content;
 }
 
 .button {
@@ -32,4 +34,21 @@
 
 .subGlobalRight > .col > div {
     margin: 10px 0;
+}
+
+@media (max-width: 800px) {
+    .subGlobal {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 560px) {
+    .subGlobal {
+        flex-direction: column;
+    }
+    .subGlobalLeft {
+        flex-direction: column;
+        gap: 0;
+        grid-gap: 0;
+    }
 }

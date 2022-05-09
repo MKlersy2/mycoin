@@ -64,3 +64,15 @@
 }
 
 .formGlobal {}
+
+@media (max-width: 850px) {
+    .chat {
+        display: none;
+    }
+}
+
+@media (max-width: 474px) {
+    .form {
+        margin: 0 20px;
+    }
+}

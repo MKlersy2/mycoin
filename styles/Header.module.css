@@ -75,6 +75,12 @@
     -o-transform: translateY(-50%);
 }
 
+@media (max-width: 828px) {
+    .media {
+        display: none;
+    }
+}
+
 .media > div {
     display: flex;
     align-items: center;
@@ -167,4 +173,10 @@
 
 .active {
     background-color: var(--faux-gris);
+}
+
+@media (max-width: 800px) {
+    .logo {
+        display: none;
+    }
 }

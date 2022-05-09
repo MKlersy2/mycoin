@@ -155,3 +155,45 @@
 .avisDesc {
     margin-bottom: 30px;
 }
+
+@media (max-width: 805px) {
+    .global {
+        padding-bottom: 0;
+    }
+    .bullet, .avis {
+        overflow-x: scroll;
+        max-width: none;
+        justify-content: flex-start;
+        padding-bottom: 60px;
+        overflow-y: visible;
+    }
+    .subBullet {
+        min-width: 162px;
+    }
+    .subAvis {
+        min-width: 200px;
+    }
+    .title {
+        font-size: 15pt;
+    }
+    .autoSizeChild {
+        font-size: 11pt;
+    }
+}
+
+@media (max-width: 423px) {
+   .landingText {
+       display: block;
+   } 
+   .title {
+       width: auto;
+       text-align: center;
+   }
+   .desc {
+       margin: 0 20px;
+   }
+
+   .icon {
+       padding-right: 20px;
+   }
+}
