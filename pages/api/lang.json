@@ -13,15 +13,15 @@
                 "bullet": [
                     {
                         "title": "Fast",
-                        "desc": "Lorem Ipsum is simply dummy text of the printing"
+                        "desc": "Build your token, in less then 15 minutes"
                     },
                     {
                         "title": "Accesible",
-                        "desc": "Lorem Ipsum is simply dummy text of the printing"
+                        "desc": "Minimal creation costs"
                     },
                     {
                         "title": "Support",
-                        "desc": "Lorem Ipsum is simply dummy text of the printing"
+                        "desc": "24/7 support available by chat"
                     }
                 ],
                 "contact": [
@@ -37,15 +37,15 @@
                 "avis": [
                     {
                         "name": "Maxime Vincent",
-                        "desc": "Lorem Ipsum is simply text of the printing and typesetting industry."
+                        "desc": "Great service. I had access to the functions of my token in less than 10 minutes."
                     },
                     {
                         "name": "Adrien Helle",
-                        "desc": "Lorem Ipsum is simply text of the printing and typesetting industry."
+                        "desc": "Great. I had a few questions and support answered me within a minute."
                     },
                     {
                         "name": "Jean Delahoz",
-                        "desc": "Lorem Ipsum is simply text of the printing and typesetting industry."
+                        "desc": "I had a very specific request, and the team knew how to answer it perfectly. Congratulations to them."
                     }
                 ],
                 "footer": [
@@ -797,15 +797,15 @@
                 "bullet": [
                     {
                         "title": "Rapide",
-                        "desc": "Lorem Ipsum is simply dummy text of the printing"
+                        "desc": "Créez votre token en moins de 15 minutes"
                     },
                     {
                         "title": "Accesible",
-                        "desc": "Lorem Ipsum is simply dummy text of the printing"
+                        "desc": "Des coûts de création minimes"
                     },
                     {
                         "title": "Support",
-                        "desc": "Lorem Ipsum is simply dummy text of the printing"
+                        "desc": "Assistance disponible 24/7 par chat"
                     }
                 ],
                 "contact": [
@@ -821,15 +821,15 @@
                 "avis": [
                     {
                         "name": "Maxime Vincent",
-                        "desc": "Lorem Ipsum is simply text of the printing and typesetting industry."
+                        "desc": "Super service. J'ai eu accès aux fonctions de mon token en moins de 10 minutes."
                     },
                     {
                         "name": "Adrien Helle",
-                        "desc": "Lorem Ipsum is simply text of the printing and typesetting industry."
+                        "desc": "Génial. J'ai eu quelques questions et le support m'a répondu dans la minute."
                     },
                     {
                         "name": "Jean Delahoz",
-                        "desc": "Lorem Ipsum is simply text of the printing and typesetting industry."
+                        "desc": "J'avais une demande bien spécifique, et l'équipe à su y répondre à la perfection. Bravo."
                     }
                 ],
                 "footer": [

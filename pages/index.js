@@ -71,7 +71,7 @@ export default function Home() {
           <div className={homepage.bullet}>
             <div className={homepage.subBullet}>
               <div className={homepage.bulletIcon}>
-                <Casque/>
+                <Timer/>
               </div>
               <div className={homepage.bulletTitle}>
                 {lang.bullet[0].title}
@@ -82,7 +82,7 @@ export default function Home() {
             </div>
             <div className={homepage.subBullet}>
               <div className={homepage.bulletIcon}>
-                <Timer/>
+                <Money/>
               </div>
               <div className={homepage.bulletTitle}>
                 {lang.bullet[1].title}
@@ -93,7 +93,7 @@ export default function Home() {
             </div>
             <div className={homepage.subBullet}>
               <div className={homepage.bulletIcon}>
-                <Money/>
+                <Casque/>
               </div>
               <div className={homepage.bulletTitle}>
                 {lang.bullet[2].title}
