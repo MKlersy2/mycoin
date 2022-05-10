@@ -2,6 +2,7 @@ import Link from 'next/link';
 import footer from '../../styles/footer.module.css'
 import styles from '../../styles/Home.module.css'
 import { useRouter } from 'next/router';
+import AppNewsletter from '../../pages/script/appNewsletter.js'
 
 export default function Footer(langGlobal) {
     const { locale } = useRouter();
@@ -29,12 +30,13 @@ export default function Footer(langGlobal) {
                         <div className={footer.title}>{langText.footer[2].title}</div>
                         <div className={footer.desc}>{langText.footer[2].button1}</div>
                         <div className={footer.inputGlobal}>
-                            <input className={styles.input} type="text" placeholder={langText.footer[2].placeholder}/>
+                            <input className={styles.input} id="newsletter-email" type="email" placeholder={langText.footer[2].placeholder}/>
                         </div>
-                        <div className={`${styles.button}`}>{langText.footer[2].button2}</div>
+                        <div id="newsletter-send" className={`${styles.button} ${styles.unselectable}`}>{langText.footer[2].button2}</div>
                     </div>
                 </div>
             </div>
+            <AppNewsletter/>
         </div>
     )
 
