@@ -45,7 +45,7 @@ export default function Home({reference}) {
                     <div className={create.blockchains}>
                         {lang.createToken[0].blockchains.map((elem, key) => (
                             <Link passHref key={key} href={`/createToken/${key}`} locale={locale}>
-                              <div className={`${styles.button} ` + (key == reference ? (create.active) : '')}>{(key == reference ? (<Valid/>) : '')} {elem.blockchain}</div>
+                              <div className={`${styles.button} ` + (key == reference ? (create.active) : '') + ` ` + (elem.blockchain == 'Solana' ? (create.unselectable) : '')}>{(key == reference ? (<Valid/>) : '')} {elem.blockchain}</div>
                             </Link>
                         ))}
                     </div>

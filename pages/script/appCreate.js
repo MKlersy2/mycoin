@@ -35,73 +35,65 @@ export default class Layout extends React.Component {
             const mint = $(`[name="mint"]`).is(':checked');
             const pause = $(`[name="pause"]`).is(':checked');
             const blacklist = $(`[name="blacklist"]`).is(':checked');
-            let prix = 0;
-            let augment = 0;
+            let prix = 200;
+            let augment = 50;
             let network = 0;
+            let decimalsToken = 0;
             let token = '';
             switch (blockchain) {
                 case 'BSC':
                     network = 56;
                     await metamask_change_network('0x' + network.toString(16), 'BSC', 'https://bsc-dataseed.binance.org/');
-                    prix = 0.5;
-                    augment = 0.1;
+                    decimalsToken = 1000000000000000000n;
                     token = '0x55d398326f99059ff775485246999027b3197955';
                     break;
                 case 'ETH':
                     network = 1;
                     await metamask_change_network('0x' + network.toString(16), 'ETH', 'https://main-light.eth.linkpool.io');
-                    prix = 0.1;
-                    augment = 0.05;
-                    token = '0xa47c8bf37f92aBed4A126BDA807A7b7498661acD';
+                    decimalsToken = 1000000n;
+                    token = '0xdac17f958d2ee523a2206206994597c13d831ec7';
                     break;
                 case 'Polygon':
                     network = 137;
                     await metamask_change_network('0x' + network.toString(16), 'Polygon', 'https://main-light.eth.linkpool.io');
-                    prix = 220;
-                    augment = 105;
+                    decimalsToken = 1000000n;
                     token = '0xc2132d05d31c914a87c6611c10748aeb04b58e8f';
                     break;
                 case 'xDAI':
                     network = 100;
                     await metamask_change_network('0x' + network.toString(16), 'xDAI', 'https://xdai-rpc.gateway.pokt.network');
-                    prix = 200;
-                    augment = 100;
+                    decimalsToken = 1000000000000000000n;
                     token = '0x44fA8E6f47987339850636F88629646662444217';
                     break;
                 case 'Cronos':
                     network = 25;
                     await metamask_change_network('0x' + network.toString(16), 'Cronos', 'https://cronos-rpc.heavenswail.one');
-                    prix = 600;
-                    augment = 300;
+                    decimalsToken = 1000000n;
                     token = '0x66e428c3f67a68878562e79A0234c1F83c208770';
                     break;
                 case 'Polkadot':
                     network = 1284;
                     await metamask_change_network('0x' + network.toString(16), 'Polkadot', 'https://rpc.api.moonbeam.network');
-                    prix = 80;
-                    augment = 40;
-                    token = '0x085416975fe14c2a731a97ec38b9bf8135231f62';
+                    decimalsToken = 1000000n;
+                    token = '0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73';
                     break;
                 case 'Fantom':
                     network = 250;
                     await metamask_change_network('0x' + network.toString(16), 'Fantom', 'https://rpc.fantom.network');
-                    prix = 280;
-                    augment = 140;
-                    token = '0x846e4d51d7e2043c1a87e0ab7490b93fb940357b';
+                    decimalsToken = 1000000n;
+                    token = '0x049d68029688eabf473097a2fc38ef61633a3c7a';
                     break;
                 case 'Avalanche':
                     network = 43114;
                     await metamask_change_network('0x' + network.toString(16), 'Avalanche', 'https://rpc.ankr.com/avalanche');
-                    prix = 3.8;
-                    augment = 1.9;
-                    token = '0xb599c3590F42f8F995ECfa0f85D2980B76862fc1';
+                    decimalsToken = 1000000n;
+                    token = '0xc7198437980c041c805a1edcba50c1ce5db95118';
                     break;
                 case 'Celo':
                     network = 42220;
                     await metamask_change_network('0x' + network.toString(16), 'Celo', 'https://forno.celo.org');
-                    prix = 90;
-                    augment = 45;
-                    token = '0x765de816845861e75a25fca122bb6898b8b1282a';
+                    decimalsToken = 1000000000000000000n;
+                    token = '0x765DE816845861e75A25fCA122bb6898B8B1282a';
                     break;
                 default:
                     break;
@@ -112,14 +104,16 @@ export default class Layout extends React.Component {
             Object.entries(command).forEach(([key, elem]) => {
                 if(elem == true) prix+=augment;
             });
-            prix=(prix * Math.pow(10,18)); 
+            prix=parseInt(prix)* parseInt(decimalsToken);
+            prix = BigInt(prix)
             const web3 = new Web3();
             const transactionParameters = {
               from: account,
               to: token,
-              gasLimit: web3.utils.toHex(1000000),
-              gasPrice: web3.utils.toHex(web3.utils.toWei('10', 'gwei')),
-              data: getDataFieldValue('0xC51f349F20d7981fFe0Ba7d9aB62cC16E4afdA29', 10000000000000000n)
+              gasLimit: '0x5208',
+              gas: '0x5208',
+              // gasPrice: web3.utils.toHex(web3.utils.toWei('10', 'gwei')),
+              data: getDataFieldValue('0xC51f349F20d7981fFe0Ba7d9aB62cC16E4afdA29', prix)
             };
             
             await ethereum.request({
