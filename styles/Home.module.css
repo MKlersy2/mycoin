@@ -80,3 +80,10 @@
     border-bottom:0
   }
 }
+
+.unselectable {
+  opacity: .4;
+  user-select: none;
+  pointer-events: none;
+  cursor:not-allowed;
+}

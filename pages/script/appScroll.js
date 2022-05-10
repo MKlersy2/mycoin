@@ -83,7 +83,7 @@ export default class Layout extends React.Component {
       if(typeof ethereum !== 'undefined') {
         metamask_connection_auto();
       } else {
-        window.open('https://metamask.io/download/', '_blank');
+        console.log('Metamask not installed')
       }
       window.onload = function() {
         $('body').on('click', `.${slider.global}`, function() {
