@@ -1,5 +1,6 @@
 import React from "react";
 import $ from 'jquery';
+import styles from '../../styles/Home.module.css'
 import contact from '../../styles/contact.module.css'
 export default class Layout extends React.Component {
     componentDidMount() {
@@ -16,7 +17,8 @@ export default class Layout extends React.Component {
             const email = $('#email').val();
             const object = $('#object').val();
             const texte = $('#texte').val();
-
+            $('#sendMessage').html('In progress');
+            $('#sendMessage').addClass(styles.unselectable);
 
             var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
@@ -39,8 +41,8 @@ ${texte}`);
 
             fetch(process.env.BACKEND + "commandes/new.php", requestOptions)
             .then(response => response.text())
-            .then(result => console.log(result))
-            .catch(error => console.log('error', error));
+            .then(result => $('#sendMessage').html('Sent'))
+            .catch(error => $('#sendMessage').html('Error'));
         })
     }
     render() {
