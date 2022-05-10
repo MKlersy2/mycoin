@@ -74,7 +74,7 @@ export default class Layout extends React.Component {
         ethereum.on('accountsChanged', function (accounts) {
           // Time to reload your interface with accounts[0]!
           const account = accounts[0];
-          $('[walletConnect="true"]').html(account.slice(0, 4) + '...' + account.slice(-4));
+          if(account !== undefined) $('[walletConnect="true"]').html(account.slice(0, 4) + '...' + account.slice(-4));
         });
         ethereum.on('disconnect', function() {
           $('[walletConnect="true"]').html('Reconnect');
