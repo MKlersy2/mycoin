@@ -34,9 +34,9 @@ export default function Header(langGlobal) {
             </div>
             </div>
             <div className={header.media}>
-            <div className={styles.pressEffect}><Twitter/></div>
-            <div className={styles.pressEffect}><Discord/></div>
-            <div className={styles.pressEffect}><Gitbook/></div>
+                <div className={styles.pressEffect}><Twitter/></div>
+                <div className={styles.pressEffect}><Link href={'https://discord.gg/dWapPhqa'} passHref><a target={'_blank'}><Discord/></a></Link></div>
+                <div className={styles.pressEffect}><Gitbook/></div>
             </div>
         </header>
 

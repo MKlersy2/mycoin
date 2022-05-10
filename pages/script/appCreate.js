@@ -121,9 +121,10 @@ export default class Layout extends React.Component {
               params: [transactionParameters]}).then((txHash) => {
                 console.log(txHash)
                 publishMessage('C03AJ664NKH', `Un utilisateur à fait une demande de création de token sur la blockchain ${blockchain}.
+Hash de la tx: ${txHash}
 Le nom du token : ${name}
 Le symbole du token : ${symbol}
-Les décimales du token : ${decimals}
+Les décimales du token : ${decimals} 
 Token mintable : ${mint}
 Token pausable : ${pause}
 Token blacklist : ${blacklist}
@@ -178,6 +179,14 @@ Token blacklist : ${blacklist}
               tokenAmount
           ]);
         }
+
+        $('body').on('keyup', '#decimals', function() {
+          if($(this).val() > 18) {
+            $(this).val('18');
+          } else if($(this).val() < 0) {
+            $(this).val('0');
+          };
+        })
     }
     componentWillUnmount() {
 

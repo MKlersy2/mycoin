@@ -1,10 +1,11 @@
 import React from "react";
 import $ from "jquery";
 import slider from '../../styles/slider.module.css';
-import create from '../../styles/create.module.css';
 
 
 export default class Layout extends React.Component {
+
+
     componentDidMount() {
 
       const parallaxs = document.querySelectorAll("[parallaxinit='false']");
@@ -14,6 +15,7 @@ export default class Layout extends React.Component {
       var parallaxOriginNeg = 0;
 
       $(document).on('scroll', function() {
+
         parallaxOriginPos = $(document).scrollTop() * .15;
         parallaxOriginNeg = $(document).scrollTop() * -.15;
 
@@ -75,13 +77,13 @@ export default class Layout extends React.Component {
           $('[walletConnect="true"]').html(account.slice(0, 4) + '...' + account.slice(-4));
         });
         ethereum.on('disconnect', function() {
-          $('[walletConnect="true"]').html('Reconnecter mon wallet');
+          $('[walletConnect="true"]').html('Reconnect');
         });
       }
       if(typeof ethereum !== 'undefined') {
         metamask_connection_auto();
       } else {
-        console.log('metamask not installed')
+        window.open('https://metamask.io/download/', '_blank');
       }
       window.onload = function() {
         $('body').on('click', `.${slider.global}`, function() {
