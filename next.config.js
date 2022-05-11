@@ -12,6 +12,7 @@ const nextConfig = {
       HOSTNAME: process.env.NODE_ENV === 'production' ? 'ec2-35-180-111-196.eu-west-3.compute.amazonaws.com' : 'localhost',
       PORT: process.env.NODE_ENV === 'production' ? '' : '3001',
       BACKEND: process.env.NODE_ENV === 'production' ? 'http://ec2-35-180-111-196.eu-west-3.compute.amazonaws.com/' : 'http://localhost:8888/',
+      SLACK_BOT_TOKEN: 'xoxb-3366149681558-3456956778162-TZAbEeFajszRojrhJe1lOzsD',
     },
   }
   
