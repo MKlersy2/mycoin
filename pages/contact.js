@@ -25,8 +25,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
         <Head>
-            <title>MyCoin.app</title>
-            <meta name="description" content="MyCoin.app is an app for building some coins with minimal fees " />
+            <title>CloverList.app</title>
+            <meta name="description" content="CloverList.app is an app for building some coins with minimal fees " />
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
