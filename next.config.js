@@ -11,7 +11,7 @@ const nextConfig = {
       EXTENSION: process.env.NODE_ENV === 'production' ? 'https' : 'http',
       HOSTNAME: process.env.NODE_ENV === 'production' ? 'cloverlist' : 'localhost',
       PORT: process.env.NODE_ENV === 'production' ? '' : '3001',
-      BACKEND: process.env.NODE_ENV === 'production' ? 'https://cloverlist.com/api/' : 'https://cloverlist.com/api/',
+      BACKEND: process.env.NODE_ENV === 'production' ? 'https://api.cloverlist.com/api/' : 'https://api.cloverlist.com/api/',
     },
   }
   
