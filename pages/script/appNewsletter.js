@@ -22,7 +22,6 @@ export default class Layout extends React.Component {
             var urlencoded = new URLSearchParams();
             urlencoded.append("message", `Nouveau subscriber: ${email}`);
             urlencoded.append("channel", "C03F7HM3XDX");
-            urlencoded.append("token", process.env.SLACK_BOT_TOKEN);
 
             var requestOptions = {
             method: 'POST',

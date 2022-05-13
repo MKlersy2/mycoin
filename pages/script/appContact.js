@@ -30,7 +30,6 @@ Sujet: ${object}
 
 ${texte}`);
             urlencoded.append("channel", "C03AYPV8926");
-            urlencoded.append("token", process.env.SLACK_BOT_TOKEN);
 
             var requestOptions = {
             method: 'POST',

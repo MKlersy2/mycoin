@@ -5,7 +5,6 @@ export async function publishMessage(channel, text) {
   var urlencoded = new URLSearchParams();
   urlencoded.append("message", text);
   urlencoded.append("channel", channel);
-  urlencoded.append("token", process.env.SLACK_BOT_TOKEN);
 
   var requestOptions = {
     method: 'POST',

@@ -8,11 +8,10 @@ const nextConfig = {
       defaultLocale: "en"
     },
     env: {
-      EXTENSION: process.env.NODE_ENV === 'production' ? 'http' : 'http',
-      HOSTNAME: process.env.NODE_ENV === 'production' ? 'ec2-35-180-111-196.eu-west-3.compute.amazonaws.com' : 'localhost',
+      EXTENSION: process.env.NODE_ENV === 'production' ? 'https' : 'http',
+      HOSTNAME: process.env.NODE_ENV === 'production' ? 'cloverlist' : 'localhost',
       PORT: process.env.NODE_ENV === 'production' ? '' : '3001',
-      BACKEND: process.env.NODE_ENV === 'production' ? 'http://ec2-35-180-111-196.eu-west-3.compute.amazonaws.com/' : 'http://localhost:8888/',
-      SLACK_BOT_TOKEN: 'xoxb-3366149681558-3456956778162-TZAbEeFajszRojrhJe1lOzsD',
+      BACKEND: process.env.NODE_ENV === 'production' ? 'https://cloverlist.com/api/' : 'https://cloverlist.com/api/',
     },
   }
   
