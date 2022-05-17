@@ -16,7 +16,7 @@ export default function Header(langGlobal) {
     const langText = langGlobal.langText;
     return (
         <header>
-            <div className={header.global}>
+            <div  className={header.global}>
             <div className={header.leftBar}>
                 <Link passHref href={'/'} locale={locale}><div className={`${header.buttonLeft} ` + (asPath == '/' ? (header.buttonActive) : '')}>{langText.indexButton}</div></Link>
                 <Link passHref href={'/createToken/0'} locale={locale}><div className={`${header.buttonLeft} ` + (asPath.includes('/createToken/') ? (header.buttonActive) : '')}>{langText.createButton}</div></Link>
