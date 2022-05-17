@@ -47,7 +47,7 @@
     justify-content: center;
     width: 88px;
     height: 88px;
-    background-color: var(--bleu-roi);
+    /* background-color: var(--bleu-roi); */
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;

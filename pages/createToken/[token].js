@@ -30,8 +30,8 @@ export default function Home({reference}) {
   return (
     <div className={styles.container}>
         <Head>
-            <title>CloverList.app</title>
-            <meta name="description" content="CloverList.app is an app for building some coins with minimal fees " />
+            <title>CloverList</title>
+            <meta name="description" content="CloverList is an app for building some coins with minimal fees " />
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
